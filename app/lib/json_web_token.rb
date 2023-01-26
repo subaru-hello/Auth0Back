@@ -9,7 +9,7 @@ class JsonWebToken
     JWT.decode(token, nil,
                true, # Verify the signature of this token
                algorithms: 'RS256',
-               iss: ,'https://dev-vpyomgq8b7rcivcb.us.auth0.com/'
+               iss: 'https://dev-vpyomgq8b7rcivcb.us.auth0.com/',
                verify_iss: true,
                aud: 'https://aouth-proto/',
                verify_aud: true) do |header|
